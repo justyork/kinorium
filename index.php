@@ -3,7 +3,7 @@ require ('./db/DB.php');
 
 // Инициализация
 $db = new \App\DB('localhost', 'root', '', 'sample');
-
+$db->query( "SET CHARSET utf8" );
 $withoutImage = $db->select()
     ->from('movie')
     ->where('movie_id NOT IN (SELECT DISTINCT movie_id FROM pictures)')
@@ -24,6 +24,7 @@ $withImage = $db->select()
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Kinorium</title>
     <link rel="stylesheet" href="lib/tree/themes/default/style.min.css" />
 </head>

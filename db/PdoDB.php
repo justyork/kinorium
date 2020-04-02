@@ -57,7 +57,7 @@ abstract class PdoDB extends Database
      */
     public function query($query)
     {
-        return $this->all($query);
+        return $this->connection->prepare($query)->execute();
     }
 
     /**
