@@ -17,7 +17,7 @@ abstract class Database extends Where
 {
 
     /** @var null|QueryBuilder */
-    public ?QueryBuilder $builder = null;
+    public $builder;
 
     /**
      * Database constructor.

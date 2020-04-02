@@ -14,13 +14,12 @@ use PDOException;
  * Class PdoDB
  * @package App
  *
- * TODO: create custom queries
  */
 abstract class PdoDB extends Database
 {
 
-    /** @var \PDO|null  */
-    public ?\PDO $connection = null;
+    /** @var PDO|null  */
+    public $connection;
 
     /**
      * @param string $host
