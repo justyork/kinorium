@@ -13,7 +13,7 @@ http://web-y.ru/portfolio
 
 ## 3. PHP
 1. https://github.com/justyork/db
-2. [HTML selectbox](https://github.com/justyork/kinorium/html)
+2. [HTML selectbox](https://github.com/justyork/kinorium/tree/master/html)
 3. 
 ```
 /data-id=[\'\"]+(\d+)[\'\"]+ data-type=[\'\"]+film.*\<h3>([^<]+)<.*<h4>([^<]+)</Usi
